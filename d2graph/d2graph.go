@@ -230,8 +230,8 @@ func (s *Style) Apply(key, value string) error {
 			break
 		}
 		f, err := strconv.Atoi(value)
-		if err != nil || (f < 0 || f > 20) {
-			return errors.New(`expected "border-radius" to be a number between 0 and 20`)
+		if err != nil || (f < 0 || f > 35) {
+			return errors.New(`expected "border-radius" to be a number between 0 and 35`)
 		}
 		s.BorderRadius.Value = value
 	case "shadow":
